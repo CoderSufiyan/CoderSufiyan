@@ -1,7 +1,8 @@
 - 👋 Hi, I’m @CoderSufiyan
 - :atom: I’m interested in Frontend Web Development.
-- 🌱 I’m currently learning React.
-- 💞️ I’m looking to collaborate on various projects.
+- ⚛️ I’m currently learning React.
+- :handshake: I’m looking to collaborate on various projects.
+- :computer: Have a look at some of my blogs [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
 
 ### Quick Stats
 | Github Stats | Top Languages |
