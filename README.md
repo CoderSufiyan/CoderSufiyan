@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @CoderSufiyan
-- :atom: I’m interested in Technical Writing and Frontend Web Development.
+- :atom: I’m interested in Frontend Web Development.
 - ⚛️ Currently I’m exploring React(a JS library).
-- :handshake: I’m looking to collaborate on various projects.
+- :handshake: I’m looking to collaborate on open-source projects.
 - :computer: I have written many technical blogs. Have a look at some of my blogs [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
 
 ### Quick Stats
