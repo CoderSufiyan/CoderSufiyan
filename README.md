@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Sufiyan Khan.
 - :atom: I love to build things.
 - ⚛️ I have built applications using React, React Native, PHP, Vanilla JS, NodeJs, etc.
-- Used Cloud platforms such as AWS and Firebase in my personal and professional projects.
-- Hosted apps on Netlify, GitHub and Heroku.
+- :cloud: Used Cloud platforms such as AWS and Firebase in my personal and professional projects.
+- :zap: Hosted apps on Netlify, GitHub and Heroku.
 - :handshake: I’m open to collaborate in open-source projects.
 - :computer: I have also published some technical blogs, you can see them [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
