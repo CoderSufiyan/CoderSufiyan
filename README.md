@@ -2,4 +2,4 @@
 - :atom: I love to build things.
 - ⚛️ I have built applications using React and React Native.
 - :handshake: I’m open to collaborate in open-source projects.
-- :computer: I have also written some technical blogs, you can see them [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
+- :computer: I have also published some technical blogs, you can see them [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
