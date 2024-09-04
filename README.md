@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @CoderSufiyan
-- :atom: I’m interested in Android Development and Web Development.
-- ⚛️ I have developed some applications using React(a JS library) and React Native.
-- :handshake: I’m looking to collaborate on open-source projects too.
-- :computer: I have written many technical blogs. Have a look at some of my blogs [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
+- 👋 Hi, I’m Sufiyan Khan.
+- :atom: I love to build things.
+- ⚛️ I have built applications using React and React Native.
+- :handshake: I’m open to collaborate in open-source projects.
+- :computer: I have also written some technical blogs, you can see them [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
