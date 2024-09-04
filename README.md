@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Sufiyan Khan.
 - :atom: I love to build things.
-- ⚛️ I have built applications using React and React Native.
+- ⚛️ I have built applications using React, React Native, PHP, Vanilla JS, NodeJs, AWS, Firebase, etc.
 - :handshake: I’m open to collaborate in open-source projects.
 - :computer: I have also published some technical blogs, you can see them [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md).
