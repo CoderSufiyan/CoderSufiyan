@@ -1,8 +1,6 @@
 # 👋🏽 Hello, I'm Sufiyan! 
 
 [![Gmail Badge](https://img.shields.io/badge/gmail-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:sufiyanandkhan@gmail.com)](mailto:sufiyanandkhan@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-khan-951a14200)
-
 
 ### Tools and Tech
 
