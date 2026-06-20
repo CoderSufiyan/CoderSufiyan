@@ -1,33 +1,80 @@
-# 👋🏽 Hello, I'm Sufiyan! 
+# Hi, I'm Sufiyan Khan 👋
 
-[![Gmail Badge](https://img.shields.io/badge/gmail-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:sufiyanandkhan@gmail.com)](mailto:sufiyanandkhan@gmail.com)
+**Senior Software Engineer** — Full Stack & AI Engineer at [Yanolja Cloud Solution](https://www.yanoljacloud.com)
 
-### Tools and Tech
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0066ff?style=for-the-badge&logo=vercel&logoColor=white)](https://sufiyan-portfolio-gamma.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-khan-951a14200)
+[![Gmail](https://img.shields.io/badge/Email-sufiyanandkhan%40gmail.com-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sufiyanandkhan@gmail.com)
+
+---
+
+## About Me
+
+4+ years building production systems in hospitality & travel tech. I architect distributed backend services, design LLM-powered agentic workflows, and lead frontend development for products used by hotels and travel operators worldwide.
+
+- 🏢 **Senior Software Engineer @ Yanolja Cloud Solution** — Jan 2026 – Present
+- ⚡ Engineered APIs serving **1M+ requests / minute** with high availability
+- 📱 Led React Native migration serving **70,000+ mobile users**
+- 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
+- 🏆 **App Development Pro Award** — Yanolja Cloud Solution
+- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)** — open source Python package
+- 🌍 India · Remote · Open to relocation
+
+---
+
+## Open Source
+
+### 📦 [envproof](https://github.com/CoderSufiyan/envproof)
+> Validate environment variables at startup with typed, clear error messages. Zero dependencies.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-blue?style=flat-square)
+
+Prevents silent misconfigurations from ever reaching production. Drop it in at app startup and get clear, typed validation errors immediately.
+
+---
+
+## Tech Stack
+
+**Frontend**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=node.js&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+**Backend**
 
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![ElasticSearch](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
+**AI / LLM**
 
-- :keyboard: Built several applications using React, React Native, PHP, Vanilla JS, NodeJs, SQL, NoSQL, etc.
-- :cloud: Used Cloud platforms such as AWS and GCP in my personal and professional projects.
-- :zap: Hosted apps on Render, Netlify, GitHub and Heroku.
-- :earth_asia: Open to collaborate in open-source projects.
-- :link: Published technical blogs on JavaScript. Click [here](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md) to see them.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+
+**Cloud & DevOps**
+
+![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![ElasticSearch](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+
+---
+
+## GitHub Stats
+
+![Sufiyan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=CoderSufiyan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=0066ff&text_color=ffffff)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=CoderSufiyan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=ffffff)
+
+---
+
+*Open to full-time, contract, and consulting roles — remote worldwide or relocation.*
