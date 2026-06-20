@@ -24,6 +24,15 @@
 
 ## Open Source
 
+### 📦 [injection-guard](https://github.com/CoderSufiyan/injection-guard)
+> Detect and sanitize prompt injection attacks in LLM apps. Zero dependencies. TypeScript-first.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-f97316?style=flat-square)
+
+Drop it in before any prompt hits your model and catch injection attempts before they cause damage.
+
 ### 📦 [envproof](https://github.com/CoderSufiyan/envproof)
 > Validate environment variables at startup with typed, clear error messages. Zero dependencies.
 
@@ -41,15 +50,6 @@ Prevents silent misconfigurations from ever reaching production. Drop it in at a
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-7c3aed?style=flat-square)
 
 Build resilient Python services without boilerplate retry logic. Works out of the box with both sync and async functions.
-
-### 📦 [injection-guard](https://github.com/CoderSufiyan/injection-guard)
-> Detect and sanitize prompt injection attacks in LLM apps. Zero dependencies. TypeScript-first.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-f97316?style=flat-square)
-
-Drop it in before any prompt hits your model and catch injection attempts before they cause damage.
 
 ---
 
