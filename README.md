@@ -87,13 +87,6 @@ Build resilient Python services without boilerplate retry logic. Works out of th
 
 ---
 
-## GitHub Stats
-
-![Sufiyan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=CoderSufiyan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=0066ff&text_color=ffffff)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=CoderSufiyan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=ffffff)
-
----
 
 ## Technical Writing
 
