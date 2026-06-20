@@ -2,7 +2,6 @@
 
 **Senior Software Engineer** — Full Stack & AI Engineer
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0066ff?style=for-the-badge&logo=vercel&logoColor=white)](https://sufiyan-portfolio-gamma.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-khan-951a14200)
 [![Gmail](https://img.shields.io/badge/Email-sufiyanandkhan%40gmail.com-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sufiyanandkhan@gmail.com)
 
