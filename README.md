@@ -16,7 +16,8 @@
 - 📱 Led React Native migration serving **70,000+ mobile users**
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
 - 🏆 **App Development Pro Award** recipient
-- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)** — open source Python package
+- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source Python packages
+- ✍️ **18 technical articles** published on [Scaler Topics](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md)
 - 🌍 India · Remote · Open to relocation
 
 ---
@@ -31,6 +32,15 @@
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-blue?style=flat-square)
 
 Prevents silent misconfigurations from ever reaching production. Drop it in at app startup and get clear, typed validation errors immediately.
+
+### 📦 [backoffkit](https://github.com/CoderSufiyan/backoffkit)
+> Retry decorator with exponential backoff and jitter. Works with sync and async functions. Zero dependencies.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-7c3aed?style=flat-square)
+
+Build resilient Python services without boilerplate retry logic. Works out of the box with both sync and async functions.
 
 ---
 
@@ -73,6 +83,12 @@ Prevents silent misconfigurations from ever reaching production. Drop it in at a
 ![Sufiyan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=CoderSufiyan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=0066ff&text_color=ffffff)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=CoderSufiyan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=ffffff)
+
+---
+
+## Technical Writing
+
+18 articles published on **[Scaler Topics](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md)** covering JavaScript, Java, Web fundamentals, and databases.
 
 ---
 
