@@ -16,7 +16,7 @@
 - 📱 Led React Native migration serving **70,000+ mobile users**
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
 - 🏆 **App Development Pro Award** recipient
-- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)**, **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** & **[injection-guard](https://github.com/CoderSufiyan/injection-guard)** — open source packages
+- 📦 Creator of **[injection-guard](https://github.com/CoderSufiyan/injection-guard)**, **[llm-fallback](https://github.com/CoderSufiyan/llm-fallback)**, **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source packages
 - ✍️ **18 technical articles** published on [Scaler Topics](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md)
 - 🌍 India · Remote · Open to relocation
 
@@ -32,6 +32,14 @@
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-f97316?style=flat-square)
 
 Drop it in before any prompt hits your model and catch injection attempts before they cause damage.
+
+### 📦 [llm-fallback](https://github.com/CoderSufiyan/llm-fallback)
+> Automatic LLM provider fallback with circuit breaker. Zero dependencies. TypeScript-first.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-10b981?style=flat-square)
+
+Keeps your AI features running when a provider goes down — automatic failover with circuit breaker pattern baked in.
 
 ### 📦 [envproof](https://github.com/CoderSufiyan/envproof)
 > Validate environment variables at startup with typed, clear error messages. Zero dependencies.
