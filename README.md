@@ -16,7 +16,7 @@
 - 📱 Led React Native migration serving **70,000+ mobile users**
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
 - 🏆 **App Development Pro Award** recipient
-- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source Python packages
+- 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)**, **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** & **[injection-guard](https://github.com/CoderSufiyan/injection-guard)** — open source packages
 - ✍️ **18 technical articles** published on [Scaler Topics](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md)
 - 🌍 India · Remote · Open to relocation
 
@@ -41,6 +41,15 @@ Prevents silent misconfigurations from ever reaching production. Drop it in at a
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-7c3aed?style=flat-square)
 
 Build resilient Python services without boilerplate retry logic. Works out of the box with both sync and async functions.
+
+### 📦 [injection-guard](https://github.com/CoderSufiyan/injection-guard)
+> Detect and sanitize prompt injection attacks in LLM apps. Zero dependencies. TypeScript-first.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-f97316?style=flat-square)
+
+Drop it in before any prompt hits your model and catch injection attempts before they cause damage.
 
 ---
 
