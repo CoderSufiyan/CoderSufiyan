@@ -1,6 +1,6 @@
 # Hi, I'm Sufiyan Khan 👋
 
-**Senior Software Engineer** — Full Stack & AI Engineer at [Yanolja Cloud Solution](https://www.yanoljacloud.com)
+**Senior Software Engineer** — Full Stack & AI Engineer
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0066ff?style=for-the-badge&logo=vercel&logoColor=white)](https://sufiyan-portfolio-gamma.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-khan-951a14200)
@@ -12,11 +12,11 @@
 
 4+ years building production systems in hospitality & travel tech. I architect distributed backend services, design LLM-powered agentic workflows, and lead frontend development for products used by hotels and travel operators worldwide.
 
-- 🏢 **Senior Software Engineer @ Yanolja Cloud Solution** — Jan 2026 – Present
+- 🏢 **Senior Software Engineer** — 4+ years in hospitality & travel tech SaaS
 - ⚡ Engineered APIs serving **1M+ requests / minute** with high availability
 - 📱 Led React Native migration serving **70,000+ mobile users**
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
-- 🏆 **App Development Pro Award** — Yanolja Cloud Solution
+- 🏆 **App Development Pro Award** recipient
 - 📦 Creator of **[envproof](https://github.com/CoderSufiyan/envproof)** — open source Python package
 - 🌍 India · Remote · Open to relocation
 
