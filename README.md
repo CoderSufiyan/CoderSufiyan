@@ -17,7 +17,7 @@
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
 - 🏆 **App Development Pro Award** recipient
 - 📦 Creator of **[injection-guard](https://github.com/CoderSufiyan/injection-guard)**, **[llm-fallback](https://github.com/CoderSufiyan/llm-fallback)**, **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source packages
-- ✍️ **31 articles** on Scaler Topics — **25.6K views · 4.78 avg rating**
+- ✍️ **31 articles** on Scaler Topics — **25.6K reads · 4.78 avg rating**
 - 🌍 India · Remote · Open to relocation
 
 ---
@@ -100,7 +100,7 @@ Build resilient Python services without boilerplate retry logic. Works out of th
 
 **31 articles** published on **[Scaler Topics](https://github.com/CoderSufiyan/BLOGS/blob/main/Blogs.md)** covering JavaScript, Java, Web fundamentals, and databases.
 
-| Articles | Views | Rating |
+| Articles | Reads | Rating |
 |----------|-------|--------|
 | 31 | 25.6K | ⭐ 4.78 |
 
