@@ -16,13 +16,22 @@
 - 📱 Led React Native migration serving **70,000+ mobile users**
 - 🥇 **#1 Play Store** — TailorPlus Fashion CRM, 5,000+ organic installs
 - 🏆 **App Development Pro Award** recipient
-- 📦 Creator of **[injection-guard](https://github.com/CoderSufiyan/injection-guard)**, **[llm-fallback](https://github.com/CoderSufiyan/llm-fallback)**, **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source packages
+- 📦 Creator of **[mcp-risk](https://github.com/CoderSufiyan/mcp-risk)**, **[injection-guard](https://github.com/CoderSufiyan/injection-guard)**, **[llm-fallback](https://github.com/CoderSufiyan/llm-fallback)**, **[envproof](https://github.com/CoderSufiyan/envproof)** & **[backoffkit](https://github.com/CoderSufiyan/backoffkit)** — open source packages
 - ✍️ **31 articles** on Scaler Topics — **25.6K reads · 4.78 avg rating**
 - 🌍 India · Remote · Open to relocation
 
 ---
 
 ## Open Source
+
+### 📦 [mcp-risk](https://github.com/CoderSufiyan/mcp-risk)
+> Audit MCP configs for risky tools, exposed secrets, and prompt-injection-like patterns.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![MCP Security](https://img.shields.io/badge/MCP-Security-ef4444?style=flat-square)
+
+Scan local MCP client configs before connecting them to AI tools. Catches risky filesystem access, shell command patterns, exposed tokens, and suspicious tool descriptions.
 
 ### 📦 [injection-guard](https://github.com/CoderSufiyan/injection-guard)
 > Detect and sanitize prompt injection attacks in LLM apps. Zero dependencies. TypeScript-first.
