@@ -1,5 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
-  <rect width="1000" height="200" fill="#0d1117"/>
-  <text x="500" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="52" font-weight="900" fill="#58a6ff">Sufiyan Khan</text>
-  <text x="500" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#8b949e">Senior Software Engineer</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240">
+
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#131820"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6">
+        <animate attributeName="stop-color" values="#3b82f6;#6366f1;#3b82f6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#6366f1">
+        <animate attributeName="stop-color" values="#6366f1;#3b82f6;#6366f1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <style>
+      @keyframes in { from{opacity:0;filter:blur(1.5px)} to{opacity:1;filter:blur(0)} }
+      @keyframes up { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes dr { from{stroke-dashoffset:400} to{stroke-dashoffset:0} }
+      @keyframes fl { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+      @keyframes pu { 0%,100%{opacity:0.12} 50%{opacity:0.25} }
+      .c { animation:in .04s both ease-out }
+      .u { animation:up .6s both ease-out }
+      .d { animation:dr 1.2s both ease-out }
+      .f { animation:fl 3s ease-in-out infinite }
+      .p { animation:pu 2s ease-in-out infinite }
+      .s { font-family:'SF Mono','Fira Code',monospace;font-size:13px }
+      .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif }
+    </style>
+  </defs>
+
+  <rect width="1000" height="240" fill="url(#g1)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#3b82f6" stroke-width="0.3" opacity="0.06">
+    <line x1="0" y1="60" x2="1000" y2="60"/>
+    <line x1="0" y1="120" x2="1000" y2="120"/>
+    <line x1="0" y1="180" x2="1000" y2="180"/>
+    <line x1="200" y1="0" x2="200" y2="240"/>
+    <line x1="500" y1="0" x2="500" y2="240"/>
+    <line x1="800" y1="0" x2="800" y2="240"/>
+  </g>
+
+  <!-- geometric accents - left panel -->
+  <rect x="0" y="0" width="4" height="240" fill="url(#accent)"/>
+  <circle cx="30" cy="50" r="2.5" fill="#6366f1" class="p" style="animation-delay:0s"/>
+  <circle cx="160" cy="30" r="1.5" fill="#3b82f6" class="p" style="animation-delay:.5s"/>
+  <circle cx="80" cy="200" r="2" fill="#818cf8" class="p" style="animation-delay:1s"/>
+  <circle cx="40" cy="120" r="1.8" fill="#3b82f6" class="p" style="animation-delay:1.5s"/>
+  <circle cx="180" cy="170" r="2.2" fill="#6366f1" class="p" style="animation-delay:.8s"/>
+  <circle cx="140" cy="220" r="1.5" fill="#818cf8" class="p" style="animation-delay:1.8s"/>
+  <circle cx="50" cy="80" r="1.2" fill="#3b82f6" class="p" style="animation-delay:1.2s"/>
+  <circle cx="120" cy="140" r="1.8" fill="#6366f1" class="p" style="animation-delay:.3s"/>
+
+  <!-- connecting lines between nodes -->
+  <g stroke="#3b82f6" stroke-width="0.5" opacity="0.1">
+    <line x1="30" y1="50" x2="120" y2="140" class="d" style="animation-delay:.4s"/>
+    <line x1="160" y1="30" x2="140" y2="220" class="d" style="animation-delay:.6s"/>
+    <line x1="80" y1="200" x2="180" y2="170" class="d" style="animation-delay:.8s"/>
+    <line x1="40" y1="120" x2="50" y2="80" class="d" style="animation-delay:.5s"/>
+  </g>
+
+  <!-- code snippet in background -->
+  <g class="s" fill="#3b82f6" opacity="0.06">
+    <text x="220" y="60">  const { data } = await db.query(</text>
+    <text x="220" y="80">    SELECT * FROM users WHERE active = true</text>
+    <text x="220" y="100">  ); return Response.json(data);</text>
+    <text x="220" y="140">  pipeline.on('message', (msg) => {</text>
+    <text x="220" y="160">    process(msg); ack(msg.id);</text>
+    <text x="220" y="180">  });</text>
+  </g>
+
+  <!-- accent bars - right side -->
+  <line x1="820" y1="170" x2="980" y2="170" stroke="#3b82f6" stroke-width="1" opacity="0.12" class="d" style="animation-delay:1s"/>
+  <line x1="840" y1="190" x2="960" y2="190" stroke="#6366f1" stroke-width="0.5" opacity="0.08" class="d" style="animation-delay:1.3s"/>
+
+  <!-- NAME -->
+  <text x="490" y="108" text-anchor="middle" class="t" font-size="52" font-weight="900" fill="#f0f2f5" letter-spacing="2" filter="url(#glow)">
+    <tspan class="c" style="animation-delay:.1s">S</tspan>
+    <tspan class="c" style="animation-delay:.14s">u</tspan>
+    <tspan class="c" style="animation-delay:.18s">f</tspan>
+    <tspan class="c" style="animation-delay:.22s">i</tspan>
+    <tspan class="c" style="animation-delay:.26s">y</tspan>
+    <tspan class="c" style="animation-delay:.3s">a</tspan>
+    <tspan class="c" style="animation-delay:.34s">n</tspan>
+    <tspan class="c" style="animation-delay:.42s" fill="url(#accent)"> </tspan>
+    <tspan class="c" style="animation-delay:.46s" fill="url(#accent)">K</tspan>
+    <tspan class="c" style="animation-delay:.5s" fill="url(#accent)">h</tspan>
+    <tspan class="c" style="animation-delay:.54s" fill="url(#accent)">a</tspan>
+    <tspan class="c" style="animation-delay:.58s" fill="url(#accent)">n</tspan>
+  </text>
+
+  <!-- underline -->
+  <line x1="370" y1="130" x2="610" y2="130" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="240" stroke-dashoffset="240" class="d" style="animation-delay:.8s"/>
+
+  <!-- ROLE -->
+  <text x="490" y="160" text-anchor="middle" class="t u" font-size="17" font-weight="500" fill="#8b949e" letter-spacing="1.5" style="animation-delay:1.2s">
+    Senior Software Engineer
+  </text>
+
+  <!-- tags -->
+  <text x="490" y="192" text-anchor="middle" class="t u" font-size="12" fill="#484f58" letter-spacing="1" style="animation-delay:1.6s">
+    Backend · AI Infrastructure · Distributed Systems
+  </text>
+
+  <!-- netbird badge -->
+  <g class="u f" style="animation-delay:2s">
+    <rect x="34" y="18" width="152" height="38" rx="6" fill="#1a2332" stroke="#3b82f6" stroke-width="0.6" opacity="0.8"/>
+    <text x="78" y="35" text-anchor="middle" class="t" font-size="10" fill="#8b949e" letter-spacing="1">netbird</text>
+    <text x="108" y="45" text-anchor="middle" class="s" font-size="11" fill="#3b82f6" font-weight="700">27K &#9733;</text>
+  </g>
+
+  <!-- cline badge -->
+  <g class="u f" style="animation-delay:2.3s">
+    <rect x="820" y="18" width="152" height="38" rx="6" fill="#1a2332" stroke="#6366f1" stroke-width="0.6" opacity="0.8"/>
+    <text x="862" y="35" text-anchor="middle" class="t" font-size="10" fill="#8b949e" letter-spacing="1">cline</text>
+    <text x="892" y="45" text-anchor="middle" class="s" font-size="11" fill="#6366f1" font-weight="700">64K &#9733;</text>
+  </g>
+
+  <!-- remote badge -->
+  <g class="u" style="animation-delay:2.6s">
+    <rect x="34" y="210" width="132" height="22" rx="4" fill="#15261e" stroke="#22c55e" stroke-width="0.5" opacity="0.8"/>
+    <text x="100" y="225" text-anchor="middle" class="t" font-size="9" fill="#22c55e" letter-spacing="1">OPEN TO WORK</text>
+  </g>
+
+  <!-- location badge -->
+  <g class="u" style="animation-delay:2.7s">
+    <rect x="178" y="210" width="112" height="22" rx="4" fill="#1a2232" stroke="#3b82f6" stroke-width="0.5" opacity="0.8"/>
+    <text x="234" y="225" text-anchor="middle" class="t" font-size="9" fill="#8b949e" letter-spacing="1">REMOTE WW</text>
+  </g>
+
 </svg>
