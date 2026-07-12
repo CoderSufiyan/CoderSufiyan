@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </linearGradient>
+
+    <linearGradient id="sh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6">
+        <animate attributeName="stop-color" values="#3b82f6;#818cf8;#3b82f6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#3b82f6;#818cf8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="g">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <style>
+      @keyframes in { from{opacity:0} to{opacity:1} }
+      @keyframes slide { from{transform:translateX(-16px);opacity:0} to{transform:translateX(0);opacity:1} }
+      @keyframes pulse { 0%,100%{opacity:0.08} 50%{opacity:0.18} }
+      @keyframes draw { to{stroke-dashoffset:0} }
+      .i { animation:in .05s both ease-out }
+      .s { animation:slide .5s both ease-out }
+      .p { animation:pulse 2.5s ease-in-out infinite }
+      .d { animation:draw 1s both ease-out }
+      .m { font-family:'SF Mono','Fira Code','Cascadia Code',monospace }
+      .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif }
+    </style>
+  </defs>
+
+  <rect width="1000" height="230" fill="url(#bg)"/>
+
+  <!-- subtle horizontal bands -->
+  <rect x="0" y="0" width="1000" height="230" fill="#3b82f6" opacity="0.015"/>
+
+  <!-- floating dots - network hint -->
+  <g fill="#3b82f6" class="p">
+    <circle cx="30" cy="40" r="2" style="animation-delay:0s"/>
+    <circle cx="960" cy="190" r="2.5" style="animation-delay:.4s"/>
+    <circle cx="60" cy="170" r="1.5" style="animation-delay:.8s"/>
+    <circle cx="920" cy="50" r="2" style="animation-delay:1.2s"/>
+    <circle cx="140" cy="210" r="1.8" style="animation-delay:1.6s"/>
+    <circle cx="850" cy="140" r="1.5" style="animation-delay:.6s"/>
+    <circle cx="200" cy="30" r="2.2" style="animation-delay:1s"/>
+  </g>
+
+  <!-- connecting lines - subtle -->
+  <g stroke="#3b82f6" stroke-width="0.4" opacity="0.08">
+    <line x1="30" y1="40" x2="200" y2="30" class="d" stroke-dasharray="250" style="stroke-dashoffset:250;animation-delay:.3s"/>
+    <line x1="140" y1="210" x2="60" y2="170" class="d" stroke-dasharray="160" style="stroke-dashoffset:160;animation-delay:.5s"/>
+    <line x1="850" y1="140" x2="960" y2="190" class="d" stroke-dasharray="180" style="stroke-dashoffset:180;animation-delay:.7s"/>
+    <line x1="920" y1="50" x2="850" y2="140" class="d" stroke-dasharray="130" style="stroke-dashoffset:130;animation-delay:.9s"/>
+  </g>
+
+  <!-- + signs - code additions -->
+  <g class="m" font-size="15" fill="#3fb950" font-weight="700">
+    <text x="50" y="54" class="i" style="animation-delay:.15s">+</text>
+    <text x="50" y="74" class="i" style="animation-delay:.25s">+</text>
+    <text x="50" y="95" class="i" style="animation-delay:.35s">+</text>
+    <text x="50" y="130" class="i" style="animation-delay:.5s">+</text>
+    <text x="50" y="150" class="i" style="animation-delay:.6s">+</text>
+    <text x="50" y="170" class="i" style="animation-delay:.7s">+</text>
+    <text x="50" y="200" class="i" style="animation-delay:.9s">+</text>
+  </g>
+
+  <!-- NAME -->
+  <text x="80" y="54" class="t" font-size="20" font-weight="800" fill="#f0f2f5" letter-spacing="1.5" filter="url(#g)">
+    <tspan class="i" style="animation-delay:.1s">S</tspan>
+    <tspan class="i" style="animation-delay:.12s">u</tspan>
+    <tspan class="i" style="animation-delay:.14s">f</tspan>
+    <tspan class="i" style="animation-delay:.16s">i</tspan>
+    <tspan class="i" style="animation-delay:.18s">y</tspan>
+    <tspan class="i" style="animation-delay:.2s">a</tspan>
+    <tspan class="i" style="animation-delay:.22s">n</tspan>
+    <tspan class="i" style="animation-delay:.28s" fill="url(#sh)"> K</tspan>
+    <tspan class="i" style="animation-delay:.3s" fill="url(#sh)">h</tspan>
+    <tspan class="i" style="animation-delay:.32s" fill="url(#sh)">a</tspan>
+    <tspan class="i" style="animation-delay:.34s" fill="url(#sh)">n</tspan>
+  </text>
+
+  <!-- ROLE -->
+  <text x="80" y="74" class="t s" font-size="14" fill="#8b949e" style="animation-delay:.4s">
+    Senior Software Engineer
+  </text>
+
+  <!-- FOCUS -->
+  <text x="80" y="93" class="t s" font-size="12" fill="#484f58" style="animation-delay:.5s">
+    Backend &amp; AI Infrastructure · Distributed Systems
+  </text>
+
+  <!-- separator -->
+  <line x1="80" y1="104" x2="950" y2="104" stroke="#21262d" stroke-width="0.5" class="d" stroke-dasharray="870" style="stroke-dashoffset:870"/>
+
+  <!-- netbird -->
+  <text x="80" y="130" class="m s" font-size="14" fill="#f0f2f5" style="animation-delay:.7s">
+    <tspan>Contributes to </tspan>
+    <tspan fill="#58a6ff" font-weight="700">netbird</tspan>
+    <tspan fill="#8b949e">  WireGuard overlay network  </tspan>
+    <tspan fill="url(#sh)" font-weight="700">27K</tspan>
+    <tspan fill="#f0f2f5"> &#9733;</tspan>
+  </text>
+
+  <!-- cline -->
+  <text x="80" y="150" class="m s" font-size="14" fill="#f0f2f5" style="animation-delay:.85s">
+    <tspan>Contributes to </tspan>
+    <tspan fill="#58a6ff" font-weight="700">cline</tspan>
+    <tspan fill="#8b949e">  AI coding agent  </tspan>
+    <tspan fill="url(#sh)" font-weight="700">64K</tspan>
+    <tspan fill="#f0f2f5"> &#9733;</tspan>
+  </text>
+
+  <!-- 5 packages -->
+  <text x="80" y="170" class="m s" font-size="13" fill="#484f58" style="animation-delay:1s">
+    Authored 5 OSS packages on npm &amp; PyPI
+  </text>
+
+  <!-- separator -->
+  <line x1="80" y1="180" x2="950" y2="180" stroke="#21262d" stroke-width="0.5" class="d" stroke-dasharray="870" style="stroke-dashoffset:870;animation-delay:.5s"/>
+
+  <!-- METRICS -->
+  <text x="80" y="200" class="m s" font-size="14" fill="#8b949e" style="animation-delay:1.2s">
+    <tspan fill="#58a6ff" font-weight="700">1M+</tspan>
+    <tspan> req/min</tspan>
+    <tspan fill="#484f58">  ·  </tspan>
+    <tspan fill="#58a6ff" font-weight="700">70K+</tspan>
+    <tspan> users</tspan>
+    <tspan fill="#484f58">  ·  </tspan>
+    <tspan fill="#58a6ff" font-weight="700">92%</tspan>
+    <tspan> faster reviews</tspan>
+    <tspan fill="#484f58">  ·  </tspan>
+    <tspan fill="#3fb950">&#9679; Open to work</tspan>
+  </text>
+
+  <!-- bottom accent -->
+  <rect x="0" y="227" width="1000" height="3" fill="url(#sh)" opacity="0.4"/>
+
+</svg>

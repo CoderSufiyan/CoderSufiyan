@@ -72,7 +72,7 @@
   </g>
 
   <!-- green highlight bars -->
-  <rect x="62" y="45" width="938" height="55" fill="#238636" opacity="0.06" class="s" style="animation-delay:.3s"/>
+  <rect x="62" y="45" width="938" height="55" fill="#1a2332" opacity="0.8" class="s" style="animation-delay:.3s"/>
 
   <!-- content lines -->
   <g class="m">
