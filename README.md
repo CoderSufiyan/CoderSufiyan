@@ -126,5 +126,3 @@ I'm looking for **senior backend or full-stack roles** with real ownership. APIs
   <a href="https://www.linkedin.com/in/sufiyan-khan-951a14200"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/CoderSufiyan"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
-
-<p align="center"><i>Open to full-time · contract · consulting &nbsp;|&nbsp; remote, hybrid, or relocation</i></p>
