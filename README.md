@@ -7,11 +7,6 @@
   <a href="https://www.linkedin.com/in/sufiyan-khan-951a14200"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:sufiyanandkhan@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://github.com/CoderSufiyan"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Open_to_Work-✓-22c55e?style=for-the-badge&labelColor=166534" /></a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=CoderSufiyan&style=flat-square&color=3b82f6" alt="profile views" />
 </p>
 
 <br />
