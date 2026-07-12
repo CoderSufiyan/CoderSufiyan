@@ -14,15 +14,15 @@
       </stop>
     </linearGradient>
 
-    <linearGradient id="respGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#58a6ff"/>
       <stop offset="100%" stop-color="#bc8cff"/>
-      <animate attributeName="x1" values="0%;100%;0%" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="100%;200%;100%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x1" values="0%;100%;0%" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;200%;100%" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
 
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="rgba(0,0,0,0.12)"/>
+      <rect width="4" height="2" fill="rgba(0,0,0,0.1)"/>
     </pattern>
 
     <filter id="glow">
@@ -31,41 +31,39 @@
     </filter>
 
     <style>
-      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.1} }
-      @keyframes fadeIn { from{opacity:0} to{opacity:1} }
-      @keyframes pulse { 0%,100%{opacity:0.04} 50%{opacity:0.1} }
-      .bl { animation: blink 1s infinite; }
-      .fi { animation: fadeIn 0.4s both ease-out; }
-      .pu { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pop { from{opacity:0;filter:blur(1px)} to{opacity:1;filter:blur(0)} }
+      @keyframes fadeUp { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.08} }
+      @keyframes pulse { 0%,100%{opacity:0.03} 50%{opacity:0.08} }
+      @keyframes glitch { 0%,100%{transform:translateX(0)} 2%{transform:translateX(-1px)} 4%{transform:translateX(1px)} 6%{transform:translateX(0)} }
+      .p  { animation: pop 0.04s both ease-out; }
+      .fu { animation: fadeUp 0.5s both ease-out; }
+      .bl { animation: blink 0.9s infinite; }
+      .bp { animation: pulse 4s ease-in-out infinite; }
+      .gl { animation: glitch 6s infinite; }
+      .mn { font-family: 'SF Mono','Fira Code','Cascadia Code',monospace; font-size:15px; }
+      .sf { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
     </style>
-
-    <!-- clip paths for typing effect -->
-    <clipPath id="cr0"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="110" dur="0.4s" begin="0.3s" fill="freeze"/></rect></clipPath>
-    <clipPath id="cr1"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="160" dur="0.5s" begin="1.0s" fill="freeze"/></rect></clipPath>
-    <clipPath id="cr2"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="140" dur="0.4s" begin="2.0s" fill="freeze"/></rect></clipPath>
-    <clipPath id="cr3"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="440" dur="0.7s" begin="2.7s" fill="freeze"/></rect></clipPath>
-    <clipPath id="cr4"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="250" dur="0.5s" begin="3.8s" fill="freeze"/></rect></clipPath>
-    <clipPath id="cr5"><rect x="0" y="0" width="0" height="30"><animate attributeName="width" from="0" to="380" dur="0.7s" begin="4.6s" fill="freeze"/></rect></clipPath>
   </defs>
 
   <rect width="1000" height="300" fill="url(#bg)"/>
 
   <!-- code rain background -->
-  <g font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="11" fill="#3b82f6" opacity="0.06">
-    <text x="30"  y="40">  function handler(req) { return await db.query(req.params); }</text>
-    <text x="420" y="70">  const pipeline = compose(validate, transform, respond);</text>
-    <text x="150" y="280">  export async function migrate(state: MigrationState)</text>
-    <text x="550" y="255">  defer cleanup(); if err != nil { log.Fatal(err) }</text>
-    <text x="60"  y="150">  type Config struct { Timeout time.Duration `json:"timeout"` }</text>
-    <text x="680" y="50">  @retry(max_attempts=3, backoff=exponential)</text>
-    <text x="780" y="130">  interface CircuitBreaker { state: 'open' | 'half' | 'closed' }</text>
+  <g font-family="'SF Mono',monospace" font-size="11" fill="#3b82f6" class="bp">
+    <text x="30"  y="40"  style="animation-delay:0s">  func handler(req) { return db.query(req.params) }</text>
+    <text x="440" y="70"  style="animation-delay:0.5s">  const pipeline = compose(validate, process, respond)</text>
+    <text x="160" y="280" style="animation-delay:1s">  export async function migrate(state: Config): void</text>
+    <text x="560" y="260" style="animation-delay:1.5s">  defer cleanup(); if err != nil { log.Fatal(err) }</text>
+    <text x="50"  y="150" style="animation-delay:2s">  type Config struct { Timeout time.Duration `json:"timeout"` }</text>
+    <text x="680" y="45"  style="animation-delay:2.5s">  @retry(max=3, backoff=exponential, jitter=true)</text>
   </g>
 
   <!-- floating braces -->
-  <g font-family="'SF Mono',monospace" font-size="48" fill="#3b82f6" class="pu" opacity="0.04">
-    <text x="32"  y="210" style="animation-delay:0s">{</text>
-    <text x="920" y="160" style="animation-delay:1s">}</text>
-    <text x="60"  y="260" style="animation-delay:1.5s">(</text>
+  <g font-family="'SF Mono',monospace" font-size="52" fill="#3b82f6" class="bp">
+    <text x="28"  y="215" style="animation-delay:0s">{</text>
+    <text x="928" y="165" style="animation-delay:1.2s">}</text>
+    <text x="56"  y="270" style="animation-delay:2.4s">(</text>
+    <text x="900" y="100" style="animation-delay:0.6s">&gt;</text>
   </g>
 
   <!-- terminal window -->
@@ -78,40 +76,100 @@
   <circle cx="74" cy="38" r="6" fill="#ff5f56"/>
   <circle cx="94" cy="38" r="6" fill="#ffbd2e"/>
   <circle cx="114" cy="38" r="6" fill="#27c93f"/>
-  <text x="500" y="43" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e" font-weight="500">sufiyan-khan — zsh</text>
-
-  <!-- terminal body padding line -->
+  <text x="500" y="43" text-anchor="middle" class="sf" font-size="12" fill="#8b949e" font-weight="500">sufiyan-khan — zsh</text>
   <line x1="55" y1="54" x2="945" y2="54" stroke="#21262d" stroke-width="1"/>
 
-  <!-- command lines — monospace, x=90 -->
-  <g font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="15">
+  <g class="mn">
 
-    <!-- ~ $ whoami -->
-    <text x="90" y="82" fill="#7ee787" clip-path="url(#cr0)">~ $ whoami</text>
-    <!-- response: sufiya-khan -->
-    <text x="110" y="110" fill="url(#respGrad)" font-weight="700" clip-path="url(#cr1)" filter="url(#glow)">sufiya-khan</text>
+    <!-- ~ $ whoami — typed char by char -->
+    <text x="90" y="82" fill="#7ee787">
+      <tspan class="p" style="animation-delay:0.20s">~</tspan>
+      <tspan class="p" style="animation-delay:0.24s"> </tspan>
+      <tspan class="p" style="animation-delay:0.28s">$</tspan>
+      <tspan class="p" style="animation-delay:0.32s"> </tspan>
+      <tspan class="p" style="animation-delay:0.36s">w</tspan>
+      <tspan class="p" style="animation-delay:0.40s">h</tspan>
+      <tspan class="p" style="animation-delay:0.44s">o</tspan>
+      <tspan class="p" style="animation-delay:0.48s">a</tspan>
+      <tspan class="p" style="animation-delay:0.52s">m</tspan>
+      <tspan class="p" style="animation-delay:0.56s">i</tspan>
+    </text>
 
-    <!-- ~ $ cat ROLE -->
-    <text x="90" y="140" fill="#7ee787" clip-path="url(#cr2)">~ $ cat ROLE</text>
-    <!-- response -->
-    <text x="110" y="168" fill="#e6edf3" clip-path="url(#cr3)">Senior Software Engineer · Backend · AI Infrastructure</text>
+    <!-- sufiya-khan — typed char by char (gradient) -->
+    <text x="110" y="110" fill="url(#nameGrad)" font-weight="700" filter="url(#glow)">
+      <tspan class="p" style="animation-delay:1.00s">s</tspan>
+      <tspan class="p" style="animation-delay:1.04s">u</tspan>
+      <tspan class="p" style="animation-delay:1.08s">f</tspan>
+      <tspan class="p" style="animation-delay:1.12s">i</tspan>
+      <tspan class="p" style="animation-delay:1.16s">y</tspan>
+      <tspan class="p" style="animation-delay:1.20s">a</tspan>
+      <tspan class="p" style="animation-delay:1.24s">n</tspan>
+      <tspan class="p" style="animation-delay:1.28s">-</tspan>
+      <tspan class="p" style="animation-delay:1.32s">k</tspan>
+      <tspan class="p" style="animation-delay:1.36s">h</tspan>
+      <tspan class="p" style="animation-delay:1.40s">a</tspan>
+      <tspan class="p" style="animation-delay:1.44s">n</tspan>
+    </text>
 
-    <!-- ~ $ open-source --active -->
-    <text x="90" y="198" fill="#7ee787" clip-path="url(#cr4)">~ $ open-source --active</text>
-    <!-- response with colored highlights -->
-    <text x="110" y="226" fill="#e6edf3" clip-path="url(#cr5)">
+    <!-- ~ $ cat ROLE — typed char by char -->
+    <text x="90" y="140" fill="#7ee787">
+      <tspan class="p" style="animation-delay:1.90s">~</tspan>
+      <tspan class="p" style="animation-delay:1.94s"> </tspan>
+      <tspan class="p" style="animation-delay:1.98s">$</tspan>
+      <tspan class="p" style="animation-delay:2.02s"> </tspan>
+      <tspan class="p" style="animation-delay:2.06s">c</tspan>
+      <tspan class="p" style="animation-delay:2.10s">a</tspan>
+      <tspan class="p" style="animation-delay:2.14s">t</tspan>
+      <tspan class="p" style="animation-delay:2.18s"> </tspan>
+      <tspan class="p" style="animation-delay:2.22s">R</tspan>
+      <tspan class="p" style="animation-delay:2.26s">O</tspan>
+      <tspan class="p" style="animation-delay:2.30s">L</tspan>
+      <tspan class="p" style="animation-delay:2.34s">E</tspan>
+    </text>
+
+    <!-- response: fade up -->
+    <text x="110" y="168" fill="#e6edf3" class="fu" style="animation-delay:2.70s">
+      Senior Software Engineer · Backend · AI Infrastructure
+    </text>
+
+    <!-- ~ $ open-source --active — typed char by char -->
+    <text x="90" y="198" fill="#7ee787">
+      <tspan class="p" style="animation-delay:3.30s">~</tspan>
+      <tspan class="p" style="animation-delay:3.34s"> </tspan>
+      <tspan class="p" style="animation-delay:3.38s">$</tspan>
+      <tspan class="p" style="animation-delay:3.42s"> </tspan>
+      <tspan class="p" style="animation-delay:3.46s">o</tspan>
+      <tspan class="p" style="animation-delay:3.50s">p</tspan>
+      <tspan class="p" style="animation-delay:3.54s">e</tspan>
+      <tspan class="p" style="animation-delay:3.58s">n</tspan>
+      <tspan class="p" style="animation-delay:3.62s">-</tspan>
+      <tspan class="p" style="animation-delay:3.66s">s</tspan>
+      <tspan class="p" style="animation-delay:3.70s">o</tspan>
+      <tspan class="p" style="animation-delay:3.74s">u</tspan>
+      <tspan class="p" style="animation-delay:3.78s">r</tspan>
+      <tspan class="p" style="animation-delay:3.82s">c</tspan>
+      <tspan class="p" style="animation-delay:3.86s">e</tspan>
+      <tspan class="p" style="animation-delay:3.90s"> </tspan>
+      <tspan class="p" style="animation-delay:3.94s">-</tspan>
+      <tspan class="p" style="animation-delay:3.98s">-</tspan>
+      <tspan class="p" style="animation-delay:4.02s">a</tspan>
+      <tspan class="p" style="animation-delay:4.06s">c</tspan>
+      <tspan class="p" style="animation-delay:4.10s">t</tspan>
+      <tspan class="p" style="animation-delay:4.14s">i</tspan>
+      <tspan class="p" style="animation-delay:4.18s">v</tspan>
+      <tspan class="p" style="animation-delay:4.22s">e</tspan>
+    </text>
+
+    <!-- response: fade up with highlights -->
+    <text x="110" y="226" fill="#e6edf3" class="fu" style="animation-delay:4.60s">
       <tspan fill="#e6edf3">netbird </tspan><tspan fill="#58a6ff">27K+★</tspan><tspan fill="#e6edf3"> · cline </tspan><tspan fill="#58a6ff">64K+★</tspan>
     </text>
 
-    <!-- cursor -->
-    <rect x="474" y="212" width="2.5" height="17" rx="1" fill="#58a6ff" class="bl" filter="url(#glow)"/>
+    <!-- blinking cursor at end of last line -->
+    <rect x="474" y="212" width="2.5" height="17" rx="1.5" fill="#58a6ff" class="bl" filter="url(#glow)"/>
 
   </g>
 
-  <!-- bottom prompt line -->
-  <rect x="90" y="248" width="10" height="17" fill="none"/>
-  <text x="90" y="263" font-family="'SF Mono',monospace" font-size="15" fill="#7ee787" opacity="0" class="fi" style="animation-delay:5.8s">~ $ █</text>
-
-  <!-- corner glow -->
-  <rect x="55" y="22" width="890" height="256" rx="8" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.25"/>
+  <!-- corner accent glow -->
+  <rect x="55" y="22" width="890" height="256" rx="8" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.2"/>
 </svg>

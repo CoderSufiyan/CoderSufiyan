@@ -1,8 +1,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=2" />
-    <img alt="Sufiyan Khan | Senior Software Engineer" src="assets/banner.svg?v=2" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=3" />
+    <img alt="Sufiyan Khan | Senior Software Engineer" src="assets/banner.svg?v=3" width="100%" />
   </picture>
 </p>
 
