@@ -1,198 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260">
+
   <defs>
-
-    <linearGradient id="phosphor" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00ff41"/>
-      <stop offset="100%" stop-color="#008f11"/>
-    </linearGradient>
-
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ff41">
-        <animate attributeName="stop-color" values="#00ff41;#39ff14;#0f0;#00ff41" dur="2s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#008f11">
-        <animate attributeName="stop-color" values="#008f11;#39ff14;#00ff41;#008f11" dur="2s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <pattern id="s" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="2" fill="rgba(0,0,0,0.35)"/>
     </pattern>
 
-    <pattern id="noise" width="64" height="64" patternUnits="userSpaceOnUse">
-      <rect width="2" height="2" x="10" y="12" fill="#00ff41" opacity="0.03"/>
-      <rect width="1" height="1" x="30" y="44" fill="#00ff41" opacity="0.04"/>
-      <rect width="2" height="1" x="50" y="22" fill="#00ff41" opacity="0.03"/>
-      <rect width="1" height="2" x="18" y="58" fill="#00ff41" opacity="0.04"/>
-      <rect width="1" height="1" x="42" y="8"  fill="#00ff41" opacity="0.03"/>
-      <rect width="3" height="1" x="6"  y="36" fill="#00ff41" opacity="0.02"/>
-      <rect width="1" height="1" x="55" y="52" fill="#00ff41" opacity="0.04"/>
-      <rect width="2" height="2" x="28" y="32" fill="#00ff41" opacity="0.03"/>
-    </pattern>
-
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="1.2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="g">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
     <style>
-      @keyframes pop { from{opacity:0;filter:blur(2px)} to{opacity:1;filter:blur(0)} }
-      @keyframes fadeUp { from{opacity:0;transform:translateY(3px)} to{opacity:1;transform:translateY(0)} }
-      @keyframes blink { 0%,100%{opacity:1} 45%{opacity:1} 50%{opacity:0.04} 55%{opacity:1} }
-      @keyframes flicker { 0%,100%{opacity:1} 92%{opacity:1} 93%{opacity:0.7} 94%{opacity:1} 96%{opacity:0.6} 97%{opacity:1} }
-      @keyframes pulse { 0%,100%{opacity:0.05} 50%{opacity:0.12} }
-      @keyframes scanline { 0%{transform:translateY(-100%)} 100%{transform:translateY(100%)} }
-      @keyframes glitch1 { 0%,100%{transform:translate(0)} 2%{transform:translate(-2px,1px)} 4%{transform:translate(2px,-1px)} 6%{transform:translate(0)} }
-      @keyframes glitch2 { 0%,100%{transform:translate(0)} 1.5%{transform:translate(2px,0)} 3%{transform:translate(-1px,-1px)} 4.5%{transform:translate(0)} }
-      .p  { animation: pop 0.04s both ease-out; }
-      .fu { animation: fadeUp 0.6s both ease-out; }
-      .bl { animation: blink 1s infinite; }
-      .fk { animation: flicker 8s infinite; }
-      .bp { animation: pulse 3s ease-in-out infinite; }
-      .g1 { animation: glitch1 7s infinite; }
-      .g2 { animation: glitch2 5s infinite; }
-      .sl { animation: scanline 0.1s linear infinite; }
-      .mn { font-family: 'SF Mono','Fira Code','Cascadia Code',monospace; }
+      @keyframes p { from{opacity:0;filter:blur(1px)} to{opacity:1;filter:blur(0)} }
+      @keyframes b { 0%,100%{opacity:1} 48%{opacity:1} 52%{opacity:0.05} }
+      @keyframes g { 0%,100%{transform:translate(0)} 2.5%{transform:translate(-2px,1px)} 5%{transform:translate(1px)} 7.5%{transform:translate(0)} }
+      .c { animation: p .04s both ease-out; }
+      .B { animation: b .9s infinite; }
+      .G { animation: g 5s infinite; }
+      .f { font-family:'SF Mono','Fira Code','Cascadia Code',monospace; font-size:18px; }
     </style>
   </defs>
 
-  <!-- pure black background -->
-  <rect width="1000" height="300" fill="#000000"/>
+  <rect width="1000" height="260" fill="#000"/>
 
-  <!-- CRT noise texture -->
-  <rect width="1000" height="300" fill="url(#noise)"/>
-
-  <!-- background hex / code fragments - brighter green -->
-  <g font-family="'SF Mono',monospace" font-size="12" fill="#00ff41" class="bp" opacity="0.08">
-    <text x="20"  y="35"  style="animation-delay:0s">  0x7f3a  PUSH  EAX | PUSH  ECX | XOR  EDX,EDX</text>
-    <text x="380" y="65"  style="animation-delay:0.4s">  struct sockaddr_in { sin_family=AF_INET sin_port=htons(443) }</text>
-    <text x="100" y="280" style="animation-delay:0.8s">  nmap -sV -p 1-65535 --script=vuln 10.0.0.0/24</text>
-    <text x="520" y="260" style="animation-delay:1.2s">  tcpdump -i eth0 -A 'tcp port 443 and (tcp[((tcp[12:1]&amp;0xf0)&gt;&gt;2):4]=0x47455420)'</text>
-    <text x="50"  y="155" style="animation-delay:1.6s">  payload = base64.b64decode(sys.argv[1]); exec(zlib.decompress(payload))</text>
-    <text x="620" y="45"  style="animation-delay:2s">  SELECT user,password FROM mysql.user WHERE host='%'</text>
-    <text x="700" y="130" style="animation-delay:2.4s">  ssh -D 1080 -C -N -f user@jumpbox.internal</text>
+  <!-- bg hex -->
+  <g font-family="'SF Mono',monospace" font-size="11" fill="#00ff41" opacity=".07">
+    <text x="20"  y="35">0x7f push eax | xor edx,edx | call 0x401000</text>
+    <text x="380" y="65">struct sockaddr { sin_family=AF_INET port=htons(443) }</text>
+    <text x="80"  y="245">nmap -sV -p- --script=vuln 10.0.1.0/24</text>
+    <text x="520" y="235">tcpdump -i eth0 -A 'tcp port 443' | grep GET</text>
+    <text x="620" y="42">ssh -D 1080 -C -N -f user@jumpbox</text>
+    <text x="60"  y="130">type Config struct { Timeout time.Duration }</text>
   </g>
 
-  <!-- floating hex / symbols -->
-  <g font-family="'SF Mono',monospace" font-size="18" fill="#00ff41" class="bp" opacity="0.1">
-    <text x="25"  y="110" style="animation-delay:0s">|</text>
-    <text x="940" y="200" style="animation-delay:0.6s">&amp;</text>
-    <text x="70"  y="240" style="animation-delay:1.2s">$</text>
-    <text x="905" y="80"  style="animation-delay:1.8s">#</text>
-    <text x="920" y="270" style="animation-delay:2.4s">&gt;</text>
+  <!-- symbols -->
+  <g font-family="'SF Mono',monospace" font-size="48" fill="#00ff41" opacity=".08">
+    <text x="28" y="200">{</text>
+    <text x="920" y="155">}</text>
+    <text x="900" y="90">&gt;</text>
   </g>
 
-  <!-- IP fragments floating -->
-  <g font-family="'SF Mono',monospace" font-size="13" fill="#00ff41" class="bp" opacity="0.07">
-    <text x="40"  y="170" style="animation-delay:0.3s">192.168.1.105:22</text>
-    <text x="780" y="90"  style="animation-delay:1s">10.0.3.4:3000</text>
-    <text x="680" y="275" style="animation-delay:1.7s">::1:8080</text>
-  </g>
+  <!-- terminal -->
+  <rect x="40" y="15" width="920" height="230" rx="6" fill="#000a00" stroke="#00cc33" stroke-width="1.5"/>
+  <rect x="40" y="15" width="920" height="230" rx="6" fill="url(#s)"/>
 
-  <!-- terminal window - classic green border -->
-  <rect x="50" y="18" width="900" height="264" rx="6" fill="#000a00" stroke="#00cc33" stroke-width="1.5"/>
-  <rect x="50" y="18" width="900" height="264" rx="6" fill="url(#scan)"/>
+  <!-- titlebar -->
+  <rect x="40" y="15" width="920" height="28" rx="6" fill="#001a00"/>
+  <rect x="40" y="30" width="920" height="13" fill="#001a00"/>
+  <circle cx="58" cy="29" r="5" fill="#f33"/>
+  <circle cx="75" cy="29" r="5" fill="#fc0"/>
+  <circle cx="92" cy="29" r="5" fill="#0f0"/>
+  <text x="500" y="34" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#0c0" font-weight="600">root@kali:~# ./connect</text>
+  <line x1="40" y1="43" x2="960" y2="43" stroke="#030" stroke-width="1"/>
 
-  <!-- scanline ray -->
-  <rect x="50" y="0" width="900" height="2" fill="#00ff41" opacity="0.04" class="sl"/>
-
-  <!-- title bar -->
-  <rect x="50" y="18" width="900" height="30" rx="6" fill="#001a00"/>
-  <rect x="50" y="33" width="900" height="15" fill="#001a00"/>
-  <circle cx="69" cy="33" r="5.5" fill="#ff3333"/>
-  <circle cx="87" cy="33" r="5.5" fill="#ffcc00"/>
-  <circle cx="105" cy="33" r="5.5" fill="#00ff41"/>
-  <text x="500" y="38" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="11.5" fill="#00cc33" font-weight="600">root@kali:~# ./connect.sh</text>
-  <line x1="50" y1="48" x2="950" y2="48" stroke="#003300" stroke-width="1"/>
-
-  <g class="mn">
+  <g class="f">
 
     <!-- $ whoami -->
-    <text x="85" y="78" fill="#00ff41" font-size="15" filter="url(#softglow)">
-      <tspan class="p" style="animation-delay:0.20s">$</tspan>
-      <tspan class="p" style="animation-delay:0.24s"> </tspan>
-      <tspan class="p" style="animation-delay:0.28s">w</tspan>
-      <tspan class="p" style="animation-delay:0.32s">h</tspan>
-      <tspan class="p" style="animation-delay:0.36s">o</tspan>
-      <tspan class="p" style="animation-delay:0.40s">a</tspan>
-      <tspan class="p" style="animation-delay:0.44s">m</tspan>
-      <tspan class="p" style="animation-delay:0.48s">i</tspan>
+    <text x="80" y="70" fill="#0f0" filter="url(#g)">
+      <tspan class="c" style="animation-delay:.2s">$</tspan>
+      <tspan class="c" style="animation-delay:.24s"> </tspan>
+      <tspan class="c" style="animation-delay:.28s">w</tspan>
+      <tspan class="c" style="animation-delay:.32s">h</tspan>
+      <tspan class="c" style="animation-delay:.36s">o</tspan>
+      <tspan class="c" style="animation-delay:.4s">a</tspan>
+      <tspan class="c" style="animation-delay:.44s">m</tspan>
+      <tspan class="c" style="animation-delay:.48s">i</tspan>
     </text>
 
-    <!-- name - glitchy -->
-    <text x="105" y="106" fill="#00ff41" font-size="15" font-weight="700" filter="url(#glow)" class="g1">
-      <tspan class="p" style="animation-delay:1.00s">s</tspan>
-      <tspan class="p" style="animation-delay:1.04s">u</tspan>
-      <tspan class="p" style="animation-delay:1.08s">f</tspan>
-      <tspan class="p" style="animation-delay:1.12s">i</tspan>
-      <tspan class="p" style="animation-delay:1.16s">y</tspan>
-      <tspan class="p" style="animation-delay:1.20s">a</tspan>
-      <tspan class="p" style="animation-delay:1.24s">n</tspan>
-      <tspan class="p" style="animation-delay:1.28s" fill="#39ff14">-</tspan>
-      <tspan class="p" style="animation-delay:1.32s" fill="#39ff14">k</tspan>
-      <tspan class="p" style="animation-delay:1.36s" fill="#39ff14">h</tspan>
-      <tspan class="p" style="animation-delay:1.40s" fill="#39ff14">a</tspan>
-      <tspan class="p" style="animation-delay:1.44s" fill="#39ff14">n</tspan>
+    <!-- name -->
+    <text x="100" y="98" fill="#0f0" font-weight="700" filter="url(#g)" class="G">
+      <tspan class="c" style="animation-delay:1s">s</tspan>
+      <tspan class="c" style="animation-delay:1.04s">u</tspan>
+      <tspan class="c" style="animation-delay:1.08s">f</tspan>
+      <tspan class="c" style="animation-delay:1.12s">i</tspan>
+      <tspan class="c" style="animation-delay:1.16s">y</tspan>
+      <tspan class="c" style="animation-delay:1.2s">a</tspan>
+      <tspan class="c" style="animation-delay:1.24s">n</tspan>
+      <tspan class="c" style="animation-delay:1.28s" fill="#ff0">-</tspan>
+      <tspan class="c" style="animation-delay:1.32s" fill="#ff0">k</tspan>
+      <tspan class="c" style="animation-delay:1.36s" fill="#ff0">h</tspan>
+      <tspan class="c" style="animation-delay:1.4s" fill="#ff0">a</tspan>
+      <tspan class="c" style="animation-delay:1.44s" fill="#ff0">n</tspan>
     </text>
 
     <!-- $ cat ROLE -->
-    <text x="85" y="136" fill="#00ff41" font-size="15" filter="url(#softglow)">
-      <tspan class="p" style="animation-delay:1.90s">$</tspan>
-      <tspan class="p" style="animation-delay:1.94s"> </tspan>
-      <tspan class="p" style="animation-delay:1.98s">c</tspan>
-      <tspan class="p" style="animation-delay:2.02s">a</tspan>
-      <tspan class="p" style="animation-delay:2.06s">t</tspan>
-      <tspan class="p" style="animation-delay:2.10s"> </tspan>
-      <tspan class="p" style="animation-delay:2.14s">R</tspan>
-      <tspan class="p" style="animation-delay:2.18s">O</tspan>
-      <tspan class="p" style="animation-delay:2.22s">L</tspan>
-      <tspan class="p" style="animation-delay:2.26s">E</tspan>
+    <text x="80" y="127" fill="#0f0" filter="url(#g)">
+      <tspan class="c" style="animation-delay:1.9s">$</tspan>
+      <tspan class="c" style="animation-delay:1.94s"> </tspan>
+      <tspan class="c" style="animation-delay:1.98s">c</tspan>
+      <tspan class="c" style="animation-delay:2.02s">a</tspan>
+      <tspan class="c" style="animation-delay:2.06s">t</tspan>
+      <tspan class="c" style="animation-delay:2.1s"> </tspan>
+      <tspan class="c" style="animation-delay:2.14s">R</tspan>
+      <tspan class="c" style="animation-delay:2.18s">O</tspan>
+      <tspan class="c" style="animation-delay:2.22s">L</tspan>
+      <tspan class="c" style="animation-delay:2.26s">E</tspan>
     </text>
 
-    <!-- role response -->
-    <text x="105" y="162" fill="#39ff14" font-size="15" class="fu" style="animation-delay:2.60s" filter="url(#glow)">
-      Senior Software Engineer · Backend · AI Infrastructure
+    <!-- role -->
+    <text x="100" y="153" fill="#0f0" font-weight="600" filter="url(#g)">
+      <tspan class="c" style="animation-delay:2.6s">S</tspan>
+      <tspan class="c" style="animation-delay:2.64s">e</tspan>
+      <tspan class="c" style="animation-delay:2.68s">n</tspan>
+      <tspan class="c" style="animation-delay:2.72s">i</tspan>
+      <tspan class="c" style="animation-delay:2.76s">o</tspan>
+      <tspan class="c" style="animation-delay:2.8s">r</tspan>
+      <tspan class="c" style="animation-delay:2.84s"> </tspan>
+      <tspan class="c" style="animation-delay:2.88s">S</tspan>
+      <tspan class="c" style="animation-delay:2.92s">o</tspan>
+      <tspan class="c" style="animation-delay:2.96s">f</tspan>
+      <tspan class="c" style="animation-delay:3s">t</tspan>
+      <tspan class="c" style="animation-delay:3.04s">w</tspan>
+      <tspan class="c" style="animation-delay:3.08s">a</tspan>
+      <tspan class="c" style="animation-delay:3.12s">r</tspan>
+      <tspan class="c" style="animation-delay:3.16s">e</tspan>
+      <tspan class="c" style="animation-delay:3.2s"> </tspan>
+      <tspan class="c" style="animation-delay:3.24s">E</tspan>
+      <tspan class="c" style="animation-delay:3.28s">n</tspan>
+      <tspan class="c" style="animation-delay:3.32s">g</tspan>
+      <tspan class="c" style="animation-delay:3.36s">i</tspan>
+      <tspan class="c" style="animation-delay:3.4s">n</tspan>
+      <tspan class="c" style="animation-delay:3.44s">e</tspan>
+      <tspan class="c" style="animation-delay:3.48s">e</tspan>
+      <tspan class="c" style="animation-delay:3.52s">r</tspan>
+      <tspan class="c" style="animation-delay:3.56s" fill="#555">·</tspan>
+      <tspan class="c" style="animation-delay:3.6s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:3.64s" fill="#555">B</tspan>
+      <tspan class="c" style="animation-delay:3.68s" fill="#555">a</tspan>
+      <tspan class="c" style="animation-delay:3.72s" fill="#555">c</tspan>
+      <tspan class="c" style="animation-delay:3.76s" fill="#555">k</tspan>
+      <tspan class="c" style="animation-delay:3.8s" fill="#555">e</tspan>
+      <tspan class="c" style="animation-delay:3.84s" fill="#555">n</tspan>
+      <tspan class="c" style="animation-delay:3.88s" fill="#555">d</tspan>
+      <tspan class="c" style="animation-delay:3.92s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:3.96s" fill="#555">·</tspan>
+      <tspan class="c" style="animation-delay:4s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:4.04s" fill="#555">A</tspan>
+      <tspan class="c" style="animation-delay:4.08s" fill="#555">I</tspan>
+      <tspan class="c" style="animation-delay:4.12s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:4.16s" fill="#555">I</tspan>
+      <tspan class="c" style="animation-delay:4.2s" fill="#555">n</tspan>
+      <tspan class="c" style="animation-delay:4.24s" fill="#555">f</tspan>
+      <tspan class="c" style="animation-delay:4.28s" fill="#555">r</tspan>
+      <tspan class="c" style="animation-delay:4.32s" fill="#555">a</tspan>
     </text>
 
-    <!-- nmap scan command -->
-    <text x="85" y="193" fill="#00ff41" font-size="15" filter="url(#softglow)">
-      <tspan class="p" style="animation-delay:3.20s">$</tspan>
-      <tspan class="p" style="animation-delay:3.24s"> </tspan>
-      <tspan class="p" style="animation-delay:3.28s">n</tspan>
-      <tspan class="p" style="animation-delay:3.32s">m</tspan>
-      <tspan class="p" style="animation-delay:3.36s">a</tspan>
-      <tspan class="p" style="animation-delay:3.40s">p</tspan>
-      <tspan class="p" style="animation-delay:3.44s"> </tspan>
-      <tspan class="p" style="animation-delay:3.48s">o</tspan>
-      <tspan class="p" style="animation-delay:3.52s">p</tspan>
-      <tspan class="p" style="animation-delay:3.56s">e</tspan>
-      <tspan class="p" style="animation-delay:3.60s">n</tspan>
-      <tspan class="p" style="animation-delay:3.64s">-</tspan>
-      <tspan class="p" style="animation-delay:3.68s">s</tspan>
-      <tspan class="p" style="animation-delay:3.72s">o</tspan>
-      <tspan class="p" style="animation-delay:3.76s">u</tspan>
-      <tspan class="p" style="animation-delay:3.80s">r</tspan>
-      <tspan class="p" style="animation-delay:3.84s">c</tspan>
-      <tspan class="p" style="animation-delay:3.88s">e</tspan>
+    <!-- $ open-source -->
+    <text x="80" y="182" fill="#0f0" filter="url(#g)">
+      <tspan class="c" style="animation-delay:4.8s">$</tspan>
+      <tspan class="c" style="animation-delay:4.84s"> </tspan>
+      <tspan class="c" style="animation-delay:4.88s">n</tspan>
+      <tspan class="c" style="animation-delay:4.92s">m</tspan>
+      <tspan class="c" style="animation-delay:4.96s">a</tspan>
+      <tspan class="c" style="animation-delay:5s">p</tspan>
+      <tspan class="c" style="animation-delay:5.04s"> </tspan>
+      <tspan class="c" style="animation-delay:5.08s">c</tspan>
+      <tspan class="c" style="animation-delay:5.12s">o</tspan>
+      <tspan class="c" style="animation-delay:5.16s">n</tspan>
+      <tspan class="c" style="animation-delay:5.2s">t</tspan>
+      <tspan class="c" style="animation-delay:5.24s">r</tspan>
+      <tspan class="c" style="animation-delay:5.28s">i</tspan>
+      <tspan class="c" style="animation-delay:5.32s">b</tspan>
+      <tspan class="c" style="animation-delay:5.36s">s</tspan>
     </text>
 
-    <!-- response - glitchy -->
-    <text x="105" y="221" fill="#39ff14" font-size="15" class="fu g2" style="animation-delay:4.40s" filter="url(#glow)">
-      <tspan>netbird </tspan><tspan fill="#ffcc00">27K+★</tspan><tspan>  cline </tspan><tspan fill="#ffcc00">64K+★</tspan>
+    <!-- netbird / cline line -->
+    <text x="100" y="208" fill="#0f0" font-weight="600" filter="url(#g)">
+      <tspan class="c" style="animation-delay:5.8s" fill="#ff0">n</tspan>
+      <tspan class="c" style="animation-delay:5.84s" fill="#ff0">e</tspan>
+      <tspan class="c" style="animation-delay:5.88s" fill="#ff0">t</tspan>
+      <tspan class="c" style="animation-delay:5.92s" fill="#ff0">b</tspan>
+      <tspan class="c" style="animation-delay:5.96s" fill="#ff0">i</tspan>
+      <tspan class="c" style="animation-delay:6s" fill="#ff0">r</tspan>
+      <tspan class="c" style="animation-delay:6.04s" fill="#ff0">d</tspan>
+      <tspan class="c" style="animation-delay:6.08s"> </tspan>
+      <tspan class="c" style="animation-delay:6.12s" fill="#f93">2</tspan>
+      <tspan class="c" style="animation-delay:6.16s" fill="#f93">7</tspan>
+      <tspan class="c" style="animation-delay:6.2s" fill="#f93">K</tspan>
+      <tspan class="c" style="animation-delay:6.24s" fill="#f93">★</tspan>
+      <tspan class="c" style="animation-delay:6.28s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:6.32s" fill="#555">·</tspan>
+      <tspan class="c" style="animation-delay:6.36s" fill="#555"> </tspan>
+      <tspan class="c" style="animation-delay:6.4s" fill="#ff0">c</tspan>
+      <tspan class="c" style="animation-delay:6.44s" fill="#ff0">l</tspan>
+      <tspan class="c" style="animation-delay:6.48s" fill="#ff0">i</tspan>
+      <tspan class="c" style="animation-delay:6.52s" fill="#ff0">n</tspan>
+      <tspan class="c" style="animation-delay:6.56s" fill="#ff0">e</tspan>
+      <tspan class="c" style="animation-delay:6.6s"> </tspan>
+      <tspan class="c" style="animation-delay:6.64s" fill="#f93">6</tspan>
+      <tspan class="c" style="animation-delay:6.68s" fill="#f93">4</tspan>
+      <tspan class="c" style="animation-delay:6.72s" fill="#f93">K</tspan>
+      <tspan class="c" style="animation-delay:6.76s" fill="#f93">★</tspan>
     </text>
 
-    <!-- block cursor -->
-    <rect x="474" y="206" width="10" height="18" fill="#00ff41" class="bl" filter="url(#glow)"/>
+    <!-- cursor -->
+    <rect x="456" y="194" width="12" height="18" fill="#0f0" class="B" filter="url(#g)"/>
 
-    <!-- last prompt -->
-    <text x="85" y="253" fill="#00ff41" font-size="15" class="fu" style="animation-delay:5.30s" filter="url(#softglow)">
+    <!-- final prompt -->
+    <text x="80" y="236" fill="#0f0" class="c" style="animation-delay:7.2s" filter="url(#g)">
       $ ./get-hired █
     </text>
 
   </g>
+
 </svg>
