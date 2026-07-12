@@ -62,8 +62,8 @@
 
 | Project | Contribution |
 |--------|-------------|
-| **[netbird](https://github.com/netbirdio/netbird)** _13K+ ★_ | WireGuard overlay network — fixed duplicate JWT group claims, guarded group deletion against active references, preserved user state through IdP sync cycles, corrected OpenAPI spec collisions, fixed Dex IdP template handling, added OIDC groups scope for generic providers. |
-| **[cline](https://github.com/cline/cline)** | AI coding agent in IDE & terminal — configurable MCP init timeout, disabled bash in plan mode, token-budget error surfacing, persistent CLI settings, slash-command autocomplete for skills, draft preservation on mode toggle, LM Studio API key integration, telemetry & MCP server edge-case fixes — spanning the SDK, CLI, and VS Code extension. |
+| **[netbird](https://github.com/netbirdio/netbird)** _27K+ ★_ | WireGuard overlay network — fixed duplicate JWT group claims, guarded group deletion against active references, preserved user state through IdP sync cycles, corrected OpenAPI spec collisions, fixed Dex IdP template handling, added OIDC groups scope for generic providers. |
+| **[cline](https://github.com/cline/cline)** _64K+ ★_ | AI coding agent in IDE & terminal — configurable MCP init timeout, disabled bash in plan mode, token-budget error surfacing, persistent CLI settings, slash-command autocomplete for skills, draft preservation on mode toggle, LM Studio API key integration, telemetry & MCP server edge-case fixes — spanning the SDK, CLI, and VS Code extension. |
 
 | Authored Package | Purpose | Quick Start |
 |------------------|---------|-------------|
