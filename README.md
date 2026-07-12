@@ -34,8 +34,8 @@
 <p align="center">
   <a href="https://github.com/CoderSufiyan">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=CoderSufiyan&hide_border=true&theme=github-dark-blue&background=0d1117&ring=3b82f6&fire=3b82f6&currStreakLabel=3b82f6" />
-      <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=CoderSufiyan&hide_border=true&theme=default&background=ffffff&ring=3b82f6&fire=3b82f6&currStreakLabel=3b82f6" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=CoderSufiyan&theme=github-dark&hide_border=true&bg_color=0d1117&color=3b82f6&line=3b82f6&point=8b5cf6&area=true&area_color=3b82f6&title_color=3b82f6" />
+      <img height="180em" src="https://github-readme-activity-graph.vercel.app/graph?username=CoderSufiyan&theme=github-light&hide_border=true&bg_color=ffffff&color=3b82f6&line=3b82f6&point=8b5cf6&area=true&area_color=3b82f6&title_color=3b82f6" />
     </picture>
   </a>
   <a href="https://github.com/CoderSufiyan">
