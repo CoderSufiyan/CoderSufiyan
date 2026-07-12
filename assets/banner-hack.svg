@@ -159,7 +159,7 @@
       Senior Software Engineer · Backend · AI Infrastructure
     </text>
 
-    <!-- $ nmap --open-source -->
+    <!-- nmap scan command -->
     <text x="85" y="193" fill="#00ff41" font-size="15" filter="url(#softglow)">
       <tspan class="p" style="animation-delay:3.20s">$</tspan>
       <tspan class="p" style="animation-delay:3.24s"> </tspan>
