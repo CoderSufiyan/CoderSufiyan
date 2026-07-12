@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="Sufiyan Khan | Senior Software Engineer" src="assets/banner.svg" width="100%" />
+  <img alt="Sufiyan Khan" src="assets/banner.svg?v=hack" width="100%" />
 </p>
 
 <p align="center">
