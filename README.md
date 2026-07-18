@@ -4,26 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/sufiyan-khan-951a14200"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:sufiyanandkhan@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/CoderSufiyan"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
-
-<br />
-
-<p align="center">
-  <a href="https://github.com/CoderSufiyan">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=CoderSufiyan&show_icons=true&count_private=true&hide_border=true&theme=github_dark&title_color=3b82f6&icon_color=3b82f6&text_color=c9d1d9&bg_color=0d1117&ring_color=3b82f6&hide=stars&rank_icon=github" />
-      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=CoderSufiyan&show_icons=true&count_private=true&hide_border=true&title_color=3b82f6&icon_color=3b82f6&text_color=24292f&bg_color=ffffff&ring_color=3b82f6&hide=stars&rank_icon=github" />
-    </picture>
-  </a>
-  <a href="https://github.com/CoderSufiyan">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderSufiyan&layout=compact&hide_border=true&theme=github_dark&title_color=3b82f6&text_color=c9d1d9&bg_color=0d1117&langs_count=8" />
-      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderSufiyan&layout=compact&hide_border=true&title_color=3b82f6&text_color=24292f&bg_color=ffffff&langs_count=8" />
-    </picture>
-  </a>
 </p>
 
 <p align="center">
