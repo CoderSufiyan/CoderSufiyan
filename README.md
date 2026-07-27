@@ -102,8 +102,3 @@ React Native migration for 70K+ users, webhook event pipeline, biometric auth. ð
 
 I'm looking for **senior backend or full-stack roles** with real ownership. APIs, reliability, AI tooling, and systems that operate at scale. Best fit where product scope, platform thinking, and production rigor intersect.
 
-<p align="center">
-  <a href="mailto:sufiyanandkhan@gmail.com"><img src="https://img.shields.io/badge/sufiyanandkhan@gmail.com-3b82f6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1e3a5f" /></a>
-  <a href="https://www.linkedin.com/in/sufiyan-khan-951a14200"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/CoderSufiyan"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
