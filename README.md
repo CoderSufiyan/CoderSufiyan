@@ -1,1 +1,1 @@
-Senior Software Engineer - open to new roles
+Senior Software Engineer - open to new roles and relocation
